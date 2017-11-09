@@ -22,3 +22,9 @@ select,
 textarea {
     max-width: 280px;
 }
+
+img.banner {
+    width: 50%;
+    height: auto;
+    margin: auto
+}
