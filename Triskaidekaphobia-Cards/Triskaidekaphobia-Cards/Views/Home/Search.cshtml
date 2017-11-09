@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 ﻿@{
+=======
+﻿@model Triskaidekaphobia_Cards.Models.MTGCardModel
+
+@{
+>>>>>>> da3a10fd3bb6f64c04db4f20e54358fd9f6d1684
     ViewBag.Title = "Search";
 }
 
@@ -47,29 +53,13 @@
         <label>Toughness - </label>
         <input type="text"/>
     </div>
-    <div><a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a>
-        <ul id='dropdown1' class='dropdown-content'>
-            <li><a href="#!">one</a></li>
-            <li><a href="#!">two</a></li>
-            <li class="divider"></li>
-            <li><a href="#!">three</a></li>
-            <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-            <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-        </ul>
+    <div>
         <label>Rarity - </label>
-        <input type="text"/>
+        @Html.EnumDropDownListFor(x => x.Rarity)
     </div>
-    <div><a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a>
-        <ul id='dropdown1' class='dropdown-content'>
-            <li><a href="#!">one</a></li>
-            <li><a href="#!">two</a></li>
-            <li class="divider"></li>
-            <li><a href="#!">three</a></li>
-            <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-            <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-        </ul>
+    <div>
         <label>Card Layout - </label>
-        <input type="text"/>
+        @Html.EnumDropDownListFor(x => x.Layout)
     </div>
     <div>
         <label>Card Type - </label>
