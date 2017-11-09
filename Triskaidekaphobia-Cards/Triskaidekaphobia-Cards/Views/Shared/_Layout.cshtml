@@ -7,8 +7,10 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link href="~/Content/css/materialize.min.css" rel="stylesheet"
           type="text/css" />
+    <link href="~/Content/css/Site.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript"
             src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="~/Content/js/materialize.min.js"></script>
@@ -16,7 +18,7 @@
 
 <body>
     <nav>
-        <div class="nav-wrapper teal">
+        <div class="nav-wrapper blue-grey darken">
             <div class="container">
                 <a href="#"
                    class="brand-logo">ASP with Material Design</a>
@@ -34,7 +36,7 @@
         <hr />
     </div>
 
-    <footer class="page-footer teal">
+    <footer class="page-footer blue-grey darken">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
@@ -65,6 +67,19 @@
                     </ul>
                 </div>
             </div>
+        </div>
+        @* pagination *@
+        <div class="center-align">
+            <ul class="pagination">
+                <li class="disabled"><a href=""><i class="material-icons">chevron_left</i></a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li class="waves-effect">2</li>
+                <li class="waves-effect">3</li>
+                <li class="waves-effect">4</li>
+                <li class="waves-effect">5</li>
+                <li class="waves-effect">6</li>
+                <li class="waves-effect"><a href=""><i class="material-icons">chevron_right</i></a></li>
+            </ul>
         </div>
 
         <div class="footer-copyright">
