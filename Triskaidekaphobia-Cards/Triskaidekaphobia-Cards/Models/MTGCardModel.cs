@@ -33,24 +33,24 @@ namespace Triskaidekaphobia_Cards.Models
 
     public class MTGCardModel
     {
-        string Name { get; set; }
-        string Code { get; set; }
-        int CMC { get; set; }
-        int MCINumber { get; set; }
-        string ManaCost { get; set; }
-        int Id { get; set; }
-        string Flavor { get; set; }
-        int Number { get; set; }
-        string Power { get; set; }
-        string Toughness { get; set; }
-        MTGRarity Rarity { get; set; }
-        MTGLayout Layout { get; set; }
-        string Type { get; set; }
-        string Subtype { get; set; }
-        string Text { get; set; }
-        int MultiverseID { get; set; }
-        string Colors { get; set; }
-        string ColorIdentity { get; set; }
-        string Artist { get; set; }
+        public string Name { get; set; }
+        public string Code { get; set; }
+        public int CMC { get; set; }
+        public int MCINumber { get; set; }
+        public string ManaCost { get; set; }
+        public int Id { get; set; }
+        public string Flavor { get; set; }
+        public int Number { get; set; }
+        public string Power { get; set; }
+        public string Toughness { get; set; }
+        public MTGRarity Rarity { get; set; }
+        public MTGLayout Layout { get; set; }
+        public string Type { get; set; }
+        public string Subtype { get; set; }
+        public string Text { get; set; }
+        public int MultiverseID { get; set; }
+        public string Colors { get; set; }
+        public string ColorIdentity { get; set; }
+        public string Artist { get; set; }
     }
 }
