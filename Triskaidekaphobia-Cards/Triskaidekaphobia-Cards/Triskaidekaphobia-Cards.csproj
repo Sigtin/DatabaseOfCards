@@ -143,11 +143,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\background1.jpg" />
+    <Content Include="Content\background2.jpg" />
+    <Content Include="Content\background3.jpg" />
     <Content Include="Content\css\materialize.css" />
     <Content Include="Content\css\materialize.min.css" />
     <Content Include="Content\css\Site.css" />
+    <Content Include="Content\css\style.css" />
     <Content Include="Content\fonts\magic_fonts\magic-font.svg" />
     <Content Include="Content\fonts\magic_fonts\Mplantin.svg" />
+    <Content Include="Content\js\init.js" />
     <Content Include="Content\js\materialize.js" />
     <Content Include="Content\js\materialize.min.js" />
     <Content Include="Content\js\siteJs.js" />
