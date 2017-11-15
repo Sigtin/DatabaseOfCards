@@ -1,7 +1,16 @@
 ﻿body {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'magic-font';
+    color:black;
 }
 
 .nav-wrapper {
     color: #455a64;
+}
+.input-field label{
+    position:unset;
+
+}
+
+select{
+    display: none;
 }
