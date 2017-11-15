@@ -27,10 +27,15 @@ namespace Triskaidekaphobia_Cards.Controllers
             return View();
         }
 
+        [HttpGet]
         public ActionResult Search()
         {
             ViewBag.Message = "Your search page.";
 
+            return View();
+        }
+        public ActionResult Search(string cardList)
+        {
             return View();
         }
     }
