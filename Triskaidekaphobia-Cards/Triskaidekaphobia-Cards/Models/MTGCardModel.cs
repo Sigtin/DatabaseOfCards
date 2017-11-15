@@ -35,7 +35,7 @@ namespace Triskaidekaphobia_Cards.Models
     {
         public string Name { get; set; }
         public string Code { get; set; }
-        public int CMC { get; set; }
+        public int? CMC { get; set; }
         public int SetCode { get; set; }
         public int MCINumber { get; set; }
         public string ManaCost { get; set; }
