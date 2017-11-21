@@ -33,26 +33,25 @@ namespace Triskaidekaphobia_Cards.Models
 
     public class MTGCardModel
     {
-        public string Name { get; set; }
-        public string Code { get; set; }
+        public string Card_Name { get; set; }
         public int? CMC { get; set; }
-        public int SetCode { get; set; }
-        public int MCINumber { get; set; }
-        public string ManaCost { get; set; }
-        public int Id { get; set; }
-        public string Flavor { get; set; }
-        public int Number { get; set; }
+        public int MCI_Number { get; set; }
+        public string Mana_Cost { get; set; }
+        public int Card_Id { get; set; }
+        public string Flavor_Text { get; set; }
         public string Power { get; set; }
         public string Toughness { get; set; }
-        public MTGRarity Rarity { get; set; }
-        public MTGLayout Layout { get; set; }
-        public string Type { get; set; }
-        public string Subtype { get; set; }
-        public string Text { get; set; }
-        public int MultiverseID { get; set; }
-        public string Colors { get; set; }
-        public string ColorIdentity { get; set; }
-        public string Artist { get; set; }
+        public MTGRarity Card_Rarity { get; set; }
+        public MTGLayout Card_Layout { get; set; }
+        public string Card_Type { get; set; }
+        public string Card_Subtype { get; set; }
+        public string Card_Text { get; set; }
+        public int Multiverse_ID { get; set; }
+        public string Card_Colors { get; set; }
+        public string Card_Color_Identity { get; set; }
+        public string Card_Artist { get; set; }
+        public int Sets { get; set; }
+
         public string image;
         public string Image
         {
@@ -62,7 +61,7 @@ namespace Triskaidekaphobia_Cards.Models
             }
             set
             {
-                image = "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=" + MultiverseID + "414376&type=card";
+                image = "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=" + this.Multiverse_ID + "414376&type=card";
             }
         }
 
