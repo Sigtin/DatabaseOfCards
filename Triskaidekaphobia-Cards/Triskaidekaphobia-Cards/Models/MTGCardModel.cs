@@ -35,9 +35,9 @@ namespace Triskaidekaphobia_Cards.Models
     {
         public string Card_Name { get; set; }
         public int? CMC { get; set; }
-        public int MCI_Number { get; set; }
+        public string MCI_Number { get; set; }
         public string Mana_Cost { get; set; }
-        public int Card_Id { get; set; }
+        public string Card_Id { get; set; }
         public string Flavor_Text { get; set; }
         public string Power { get; set; }
         public string Toughness { get; set; }
@@ -50,7 +50,7 @@ namespace Triskaidekaphobia_Cards.Models
         public string Card_Colors { get; set; }
         public string Card_Color_Identity { get; set; }
         public string Card_Artist { get; set; }
-        public int Sets { get; set; }
+        public string Sets { get; set; }
 
         public string image;
         public string Image
