@@ -37,7 +37,7 @@ namespace Triskaidekaphobia_Cards.Models
         public int? CMC { get; set; }
         public int MCI_Number { get; set; }
         public string Mana_Cost { get; set; }
-        public int Card_Id { get; set; }
+        public string Card_Id { get; set; }
         public string Flavor_Text { get; set; }
         public string Power { get; set; }
         public string Toughness { get; set; }
@@ -61,7 +61,7 @@ namespace Triskaidekaphobia_Cards.Models
             }
             set
             {
-                image = "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=" + this.Multiverse_ID + "414376&type=card";
+                image = "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=" + this.Multiverse_ID + "&type=card";
             }
         }
 

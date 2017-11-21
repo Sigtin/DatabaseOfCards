@@ -1,22 +1,20 @@
 ﻿@model Triskaidekaphobia_Cards.Models.MTGCardModel
 
 
-<p>MCI Number: @Model.MCINumber</p>
-<p>Multiverse ID: @Model.MultiverseID</p>
-<p>Card ID: @Model.Id</p>
+<p>MCI Number: @Model.MCI_Number</p>
+<p>Multiverse ID: @Model.Multiverse_ID</p>
+<p>Card ID: @Model.Card_Id</p>
 <img src=@Model.Image/>
-<p>Type of Card: @Model.Layout</p>
-<p>Number in set: @Model.Number</p>
-<p>Set: @Model.SetCode</p>
-<p>Card Name: @Model.Name</p>
+<p>Type of Card: @Model.Card_Layout</p>
+<p>Card Name: @Model.Card_Name</p>
 <p>Converted Mana Cost: @Model.CMC</p>
-<p>Mana Cost: @Model.ManaCost</p>
-<p>Color Identity: @Model.ColorIdentity</p>
-<p>Colors: @Model.Colors</p>
-<p>Type: @Model.Type</p>
-<p>Subtype: @Model.Subtype</p>
-<p>Card Text: @Model.Text</p>
-<p>Flavor Text: @Model.Flavor</p>
-<p>Rarity: @Model.Rarity</p>
+<p>Mana Cost: @Model.Mana_Cost</p>
+<p>Color Identity: @Model.Card_Color_Identity</p>
+<p>Colors: @Model.Card_Colors</p>
+<p>Type: @Model.Card_Type</p>
+<p>Subtype: @Model.Card_Subtype</p>
+<p>Card Text: @Model.Card_Text</p>
+<p>Flavor Text: @Model.Flavor_Text</p>
+<p>Rarity: @Model.Card_Rarity</p>
 <p>Power/Toughness: @Model.Power / @Model.Toughness</p>
-<p>Artist: @Model.Artist</p>
+<p>Artist: @Model.Card_Artist</p>

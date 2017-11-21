@@ -4,11 +4,13 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Triskaidekaphobia_Cards.Models;
+using Triskaidekaphobia_Cards.Services;
 
 namespace Triskaidekaphobia_Cards.Controllers
 {
     public class HomeController : Controller
     {
+        MTGCardService mtgService = new MTGCardService();
         public ActionResult Index()
         {
             return View();
@@ -51,6 +53,7 @@ namespace Triskaidekaphobia_Cards.Controllers
 
         public ActionResult SearchResult(MTGCardListModel MTGlist)
         {
+            MTGlist = mtgService.GetAllMTGCards();
             return View(MTGlist);
         }
     }
