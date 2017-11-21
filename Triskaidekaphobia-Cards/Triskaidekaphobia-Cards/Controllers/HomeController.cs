@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Triskaidekaphobia_Cards.Models;
 
 namespace Triskaidekaphobia_Cards.Controllers
 {
@@ -36,7 +37,21 @@ namespace Triskaidekaphobia_Cards.Controllers
         }
         public ActionResult Search(string cardList)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                MTGCardListModel MTGlist = new MTGCardListModel();
+                //MTGlist = service.ReturnCardList();
+                return RedirectToAction("Result", MTGlist);
+            }
+            else
+            {
+                return View();
+            }
+        }
+
+        public ActionResult SearchResult(MTGCardListModel MTGlist)
+        {
+            return View(MTGlist);
         }
     }
 }
