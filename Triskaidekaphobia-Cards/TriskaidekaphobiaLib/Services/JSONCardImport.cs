@@ -10,12 +10,12 @@ using MTGDAL;
 
 namespace TriskaidekaphobiaLib.Services
 {
-    class JSONCardImport
+    public class JSONCardImport
     {
-        static void JSONImport()
-        {
+        public void JSONImport()
+        { 
             List<MTGSet> sets;
-            using (StreamReader r = new StreamReader("../../AllSets-x.json"))
+            using (StreamReader r = new StreamReader("./AllSets-x.json"))
             {
                 string json = r.ReadToEnd();
                 sets = JsonConvert.DeserializeObject<List<MTGSet>>(json);
@@ -72,6 +72,8 @@ namespace TriskaidekaphobiaLib.Services
                             toughness = card.Toughness,
                             sets = printingsString
                         };
+                        db.MTG_Card.Add(newMTGCard);
+                        db.SaveChanges();
                         //Console.WriteLine($"{card.Name} {card.ManaCost}");
                         //Console.WriteLine($"CMC: {card.CMC}");
                         //string colorIdentity = "Color Identity: ";

@@ -5,14 +5,17 @@ using System.Web;
 using System.Web.Mvc;
 using Triskaidekaphobia_Cards.Models;
 using Triskaidekaphobia_Cards.Services;
-
+using TriskaidekaphobiaLib;
 namespace Triskaidekaphobia_Cards.Controllers
 {
     public class HomeController : Controller
     {
         MTGCardService mtgService = new MTGCardService();
+        TriskaidekaphobiaLib.Services.JSONCardImport import = new TriskaidekaphobiaLib.Services.JSONCardImport();
+
         public ActionResult Index()
         {
+            import.JSONImport();
             return View();
         }
 
