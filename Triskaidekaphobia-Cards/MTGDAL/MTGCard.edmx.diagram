@@ -9,8 +9,8 @@
 <<<<<<< HEAD
         <EntityTypeShape EntityType="TCGModel.Registration" Width="1.5" PointX="3.375" PointY="0.75" />
 =======
-        <EntityTypeShape EntityType="TCGModel.Registration" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
->>>>>>> a839d7db81bd2263a16ceee841e63b325f70a04e
+        
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; a839d7db81bd2263a16ceee841e63b325f70a04e
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
