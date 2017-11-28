@@ -13,10 +13,10 @@ namespace MTGDAL
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class TCGEntities1 : DbContext
+    public partial class TCGEntities2 : DbContext
     {
-        public TCGEntities1()
-            : base("name=TCGEntities1")
+        public TCGEntities2()
+            : base("name=TCGEntities2")
         {
         }
     
