@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2008
+VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triskaidekaphobia-Cards", "Triskaidekaphobia-Cards\Triskaidekaphobia-Cards.csproj", "{69EF7779-6E5C-46A6-8324-F21A525D8C71}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTGDAL", "MTGDAL\MTGDAL.csproj", "{ACC944BE-2701-4E00-8586-C24FC4AB54E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriskaidekaphobiaLib", "TriskaidekaphobiaLib\TriskaidekaphobiaLib.csproj", "{F1B52ADA-446D-4A89-BFDC-591BB2F4EDE0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{B0E5AF51-FBF3-4A67-BDCA-8D549ADD91DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{ACC944BE-2701-4E00-8586-C24FC4AB54E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACC944BE-2701-4E00-8586-C24FC4AB54E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACC944BE-2701-4E00-8586-C24FC4AB54E7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F1B52ADA-446D-4A89-BFDC-591BB2F4EDE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F1B52ADA-446D-4A89-BFDC-591BB2F4EDE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F1B52ADA-446D-4A89-BFDC-591BB2F4EDE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F1B52ADA-446D-4A89-BFDC-591BB2F4EDE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0E5AF51-FBF3-4A67-BDCA-8D549ADD91DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0E5AF51-FBF3-4A67-BDCA-8D549ADD91DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0E5AF51-FBF3-4A67-BDCA-8D549ADD91DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0E5AF51-FBF3-4A67-BDCA-8D549ADD91DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
