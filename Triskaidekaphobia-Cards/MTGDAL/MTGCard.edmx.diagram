@@ -6,6 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="16eedaa925314582bcc05673aa23cb34" Name="Diagram1" ZoomLevel="87">
         <EntityTypeShape EntityType="TCGModel.MTG_Card" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TCGModel.Registration" Width="1.5" PointX="3.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

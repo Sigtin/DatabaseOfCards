@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Austin Sigler\Desktop\Neumont\5th Quarter\PRO150\GitHub\DatabaseOfCards\Triskaidekaphobia-Cards\MTGDAL\MTGCard.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Neumont Work\PRO150 - Web-Based Software Projects\Triskaidekaphobia\Triskaidekaphobia-Cards\MTGDAL\MTGCard.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
