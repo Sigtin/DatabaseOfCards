@@ -27,7 +27,7 @@ namespace UnitTestProject1
 
             ViewResult result = homeController.About() as ViewResult;
 
-            Assert.AreEqual("Your application description page.", result);
+            Assert.AreEqual("Your application description page.", result.ViewBag.Message);
         }
 
         [TestMethod]
@@ -37,7 +37,7 @@ namespace UnitTestProject1
 
             ViewResult result = homeController.Search() as ViewResult;
 
-            Assert.AreEqual("Your Search Page.", result);
+            Assert.AreEqual("Your Search Page.", result.ViewBag.Message);
 
         }
 
