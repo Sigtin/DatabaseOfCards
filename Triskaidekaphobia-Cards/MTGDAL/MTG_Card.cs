@@ -15,7 +15,7 @@ namespace MTGDAL
     public partial class MTG_Card
     {
         public string card_name { get; set; }
-        public int cmc { get; set; }
+        public decimal cmc { get; set; }
         public string mci_number { get; set; }
         public string mana_cost { get; set; }
         public string card_id { get; set; }

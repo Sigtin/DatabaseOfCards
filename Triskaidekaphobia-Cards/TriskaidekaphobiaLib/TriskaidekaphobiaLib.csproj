@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{ACC944BE-2701-4E00-8586-C24FC4AB54E7}</ProjectGuid>
+    <ProjectGuid>{F1B52ADA-446D-4A89-BFDC-591BB2F4EDE0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MTGDAL</RootNamespace>
-    <AssemblyName>MTGDAL</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>TriskaidekaphobiaLib</RootNamespace>
+    <AssemblyName>TriskaidekaphobiaLib</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -31,16 +31,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,54 +50,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MTGCard.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MTGCard.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="MTGCard.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MTGCard.tt</DependentUpon>
-    </Compile>
-    <Compile Include="MTGCard.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MTGCard.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="MTG_Card.cs">
-      <DependentUpon>MTGCard.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Models\MTGCard.cs" />
+    <Compile Include="Models\MTGSet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Registration.cs">
-      <DependentUpon>MTGCard.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Services\JSONCardImport.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.Config" />
-    <EntityDeploy Include="MTGCard.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>MTGCard.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="MTGCard.edmx.diagram">
-      <DependentUpon>MTGCard.edmx</DependentUpon>
-    </None>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="MTGCard.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MTGCard.edmx</DependentUpon>
-      <LastGenOutput>MTGCard.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="MTGCard.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MTGCard.edmx</DependentUpon>
-      <LastGenOutput>MTGCard.cs</LastGenOutput>
-    </Content>
+    <ProjectReference Include="..\MTGDAL\MTGDAL.csproj">
+      <Project>{acc944be-2701-4e00-8586-c24fc4ab54e7}</Project>
+      <Name>MTGDAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

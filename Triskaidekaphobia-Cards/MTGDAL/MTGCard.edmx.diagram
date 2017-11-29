@@ -4,8 +4,9 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="16eedaa925314582bcc05673aa23cb34" Name="Diagram1" ZoomLevel="87">
+      <Diagram DiagramId="dc434c28bb4f4ad78a25e7c544794b13" Name="Diagram1" ZoomLevel="87">
         <EntityTypeShape EntityType="TCGModel.MTG_Card" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TCGModel.Registration" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -13,10 +13,10 @@ namespace MTGDAL
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class TCGEntities : DbContext
+    public partial class TCGEntities2 : DbContext
     {
-        public TCGEntities()
-            : base("name=TCGEntities")
+        public TCGEntities2()
+            : base("name=TCGEntities2")
         {
         }
     
@@ -26,5 +26,6 @@ namespace MTGDAL
         }
     
         public virtual DbSet<MTG_Card> MTG_Card { get; set; }
+        public virtual DbSet<Registration> Registrations { get; set; }
     }
 }
