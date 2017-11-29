@@ -11,6 +11,7 @@ namespace Triskaidekaphobia_Cards.Services
     {
         public MTGCardListModel GetAllMTGCards()
         {
+            //I just needed to push
             MTGCardListModel model = new MTGCardListModel();
 
             MTGCardModel testCard = new MTGCardModel();
