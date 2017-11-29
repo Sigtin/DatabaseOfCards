@@ -1,0 +1,37 @@
+﻿@model Triskaidekaphobia.Models.MTGCardListModel
+
+@{
+    ViewBag.Title = "SearchResult";
+}
+
+<h2>Results</h2>
+
+<p>"@Model.MTGCards.Count" Results Found</p>
+
+@foreach (var card in Model.MTGCards)
+{
+    <hr>
+    <table>
+        <tr>
+            <td>
+                <img src=@card.Image />
+            </td>
+            <td>
+                <p>
+
+                    Card Name: @card.Card_Name<br />
+                    Mana Cost: @card.Mana_Cost<br />
+
+                    Type: @card.Card_Type<br />
+                    Subtype: @card.Card_Subtype<br />
+                    Card Text: @card.Card_Text<br />
+                    Rarity: @card.Card_Rarity<br />
+                    Power/Toughness: @card.Power / @card.Toughness<br />
+                </p>
+            </td>
+        </tr>
+    </table>
+    
+    <hr>
+}
+
