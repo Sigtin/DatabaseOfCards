@@ -14,3 +14,10 @@
 select{
     display: none;
 }
+.logoImage{
+    width:750px;
+}
+.logoImageNav {
+    margin: 10px;
+    width: 180px;
+}
