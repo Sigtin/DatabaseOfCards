@@ -5,6 +5,7 @@ using System.Web;
 using Triskaidekaphobia.Models;
 //using MTGDAL;
 
+
 namespace Triskaidekaphobia.Services
 {
     public class MTGCardService

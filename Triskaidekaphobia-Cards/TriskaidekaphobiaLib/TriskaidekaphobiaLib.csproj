@@ -53,6 +53,7 @@
     <Compile Include="Models\MTGCard.cs" />
     <Compile Include="Models\MTGSet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DynamicMTGService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
