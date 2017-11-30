@@ -49,14 +49,51 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MTGCard.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MTGCard.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MTGCard.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MTGCard.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MTGCard.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MTGCard.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="MTG_Card.cs">
+      <DependentUpon>MTGCard.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
+    <EntityDeploy Include="MTGCard.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MTGCard.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="MTGCard.edmx.diagram">
+      <DependentUpon>MTGCard.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MTGCard.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MTGCard.edmx</DependentUpon>
+      <LastGenOutput>MTGCard.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="MTGCard.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MTGCard.edmx</DependentUpon>
+      <LastGenOutput>MTGCard.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
