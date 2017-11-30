@@ -38,6 +38,7 @@ namespace Triskaidekaphobia_Cards.Controllers
 
             return View();
         }
+        [HttpPost]
         public ActionResult Search(string cardList)
         {
             if (ModelState.IsValid)
