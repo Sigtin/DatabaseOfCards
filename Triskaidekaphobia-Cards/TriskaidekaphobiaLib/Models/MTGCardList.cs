@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TriskaidekaphobiaLib.Models
 {
-    public class MTGSet
+    public class MTGCardList
     {
         public List<MTGCard> Cards { get; set; } = new List<MTGCard>();
     }
