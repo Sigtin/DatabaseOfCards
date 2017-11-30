@@ -99,6 +99,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Triskaidekaphobia-Cards\TriskaidekaphobiaLib\TriskaidekaphobiaLib.csproj">
+      <Project>{F1B52ADA-446D-4A89-BFDC-591BB2F4EDE0}</Project>
+      <Name>TriskaidekaphobiaLib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Triskaidekaphobia\Triskaidekaphobia.csproj">
       <Project>{8E7B36C1-A2B3-40EB-A92B-6F64EBD46A72}</Project>
       <Name>Triskaidekaphobia</Name>
