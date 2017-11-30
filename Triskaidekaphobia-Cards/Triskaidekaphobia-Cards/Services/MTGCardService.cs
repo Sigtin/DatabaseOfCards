@@ -11,6 +11,7 @@ namespace Triskaidekaphobia_Cards.Services
     {
         public MTGCardListModel GetAllMTGCards()
         {
+            //I just needed to push
             MTGCardListModel model = new MTGCardListModel();
 
             MTGCardModel testCard = new MTGCardModel();
@@ -34,6 +35,26 @@ namespace Triskaidekaphobia_Cards.Services
             testCard.Image = testCard.Multiverse_ID + "";
             model.MTGCards.Add(testCard);
 
+            MTGCardModel testCard2 = new MTGCardModel();
+            testCard2.Card_Artist = "Robbie Trevino";
+            testCard2.Card_Colors = "Black";
+            testCard2.Card_Color_Identity = "B";
+            testCard2.Card_Id = "9a77d560bc690a7a44ac7fb88b99ae3e57a63fc9";
+            testCard2.Card_Layout = MTGLayout.NORMAL;
+            testCard2.Card_Name = "Gray Merchant of Asphodel";
+            testCard2.Card_Rarity = MTGRarity.COMMON;
+            testCard2.Card_Subtype = "Zombie";
+            testCard2.Card_Text = "When Gray Merchant of Asphodel enters the battlefield, each opponent loses X life, where X is your devotion to black. You gain life equal to the life lost this way. (Each {B} in the mana costs of permanents you control counts toward your devotion to black.)";
+            testCard2.Card_Type = "Creature — Zombie";
+            testCard2.CMC = 5;
+            testCard2.Flavor_Text = "";
+            testCard2.Mana_Cost = "{3}{B}{B}";
+            testCard2.MCI_Number = "146";
+            testCard2.Multiverse_ID = 389541;
+            testCard2.Power = "2";
+            testCard2.Toughness = "4";
+            testCard2.Image = testCard.Multiverse_ID + "";
+            model.MTGCards.Add(testCard2);
             //using (var db = new TCGEntities())
             //{
             //    var query = db.MTG_Card.Select(x => x);
