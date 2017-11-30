@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using MTGDAL;
 using TriskaidekaphobiaLib.Models;
-using Triskaidekaphobia.Models;
 
 namespace TriskaidekaphobiaLib.Services
 {
@@ -37,7 +36,8 @@ namespace TriskaidekaphobiaLib.Services
                     Colors = card.card_colors.Split(' ').ToList(),
                     ColorIdentity = card.card_color_identity.Split(' ').ToList(),
                     Artist = card.card_artist,
-                    Printings = card.sets.Split(' ').ToList()
+                    Printings = card.sets.Split(' ').ToList(),
+                    Image = ""
                 }));
             }
             return model;

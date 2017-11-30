@@ -51,6 +51,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\MTGCard.cs" />
+    <Compile Include="Models\MTGCardList.cs" />
+    <Compile Include="Models\MTGCardModel.cs" />
     <Compile Include="Models\MTGSet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\DynamicMTGService.cs" />
@@ -65,8 +67,6 @@
       <Name>MTGDAL</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
