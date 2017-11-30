@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Triskaidekaphobia.Models;
-using MTGDAL;
+//using MTGDAL;
 
 namespace Triskaidekaphobia.Services
 {
