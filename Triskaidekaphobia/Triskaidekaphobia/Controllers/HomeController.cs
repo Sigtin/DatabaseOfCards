@@ -4,13 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Triskaidekaphobia.Models;
-using Triskaidekaphobia.Services;
+using TriskaidekaphobiaLib.Services;
+using TriskaidekaphobiaLib.Models;
 
 namespace Triskaidekaphobia.Controllers
 {
     public class HomeController : Controller
     {
-        MTGCardService mtgService = new MTGCardService();
+        DynamicMTGService mtgService = new DynamicMTGService();
         public ActionResult Index()
         {
             return View();
@@ -37,13 +38,15 @@ namespace Triskaidekaphobia.Controllers
 
             return View();
         }
+
+        [HttpPost]
         public ActionResult Search(string cardList)
         {
             if (ModelState.IsValid)
             {
-                MTGCardListModel MTGlist = new MTGCardListModel();
+                TriskaidekaphobiaLib.Models.MTGCardList MTGlist = new TriskaidekaphobiaLib.Models.MTGCardList();
                 //MTGlist = service.ReturnCardList();
-                return RedirectToAction("Result", MTGlist);
+                return RedirectToAction("SearchResult", MTGlist);
             }
             else
             {
@@ -51,9 +54,9 @@ namespace Triskaidekaphobia.Controllers
             }
         }
 
-        public ActionResult SearchResult(MTGCardListModel MTGlist)
+        public ActionResult SearchResult(TriskaidekaphobiaLib.Models.MTGCardList MTGlist)
         {
-            MTGlist = mtgService.GetAllMTGCards();
+            MTGlist = mtgService.GetAllMagicCards();
             return View(MTGlist);
         }
     }

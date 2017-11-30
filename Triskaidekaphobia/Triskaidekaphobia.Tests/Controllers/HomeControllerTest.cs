@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Triskaidekaphobia;
 using Triskaidekaphobia.Controllers;
-using Triskaidekaphobia.Models;
+using TriskaidekaphobiaLib.Models;
 
 namespace Triskaidekaphobia.Tests.Controllers
 {
@@ -57,7 +57,7 @@ namespace Triskaidekaphobia.Tests.Controllers
         {
             HomeController homeController = new HomeController();
 
-            MTGCardListModel cardListModel = new MTGCardListModel();
+            MTGCardList cardListModel = new MTGCardList();
             var result = homeController.SearchResult(cardListModel) as ViewResult;
 
             Assert.IsNotNull(result);

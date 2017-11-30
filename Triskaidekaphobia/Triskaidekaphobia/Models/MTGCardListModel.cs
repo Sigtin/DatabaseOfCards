@@ -5,11 +5,11 @@ using System.Web;
 
 namespace Triskaidekaphobia.Models
 {
-    public class MTGCardListModel
+    public class MTGCardList
     {
         public List<MTGCardModel> MTGCards { get; set; }
 
-        public MTGCardListModel()
+        public MTGCardList()
         {
             MTGCards = new List<MTGCardModel>();
         }
