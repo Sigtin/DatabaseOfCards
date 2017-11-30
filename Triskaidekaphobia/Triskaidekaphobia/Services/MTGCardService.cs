@@ -10,9 +10,9 @@ namespace Triskaidekaphobia.Services
 {
     public class MTGCardService
     {
-        public MTGCardListModel GetAllMTGCards()
+        public MTGCardList GetAllMTGCards()
         {
-            MTGCardListModel model = new MTGCardListModel();
+            MTGCardList model = new MTGCardList();
 
             MTGCardModel testCard = new MTGCardModel();
             testCard.Card_Artist = "Robbie Trevino";

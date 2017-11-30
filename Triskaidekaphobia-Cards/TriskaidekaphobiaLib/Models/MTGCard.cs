@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Triskaidekaphobia.Models;
+using TriskaidekaphobiaLib.Models;
 
 namespace TriskaidekaphobiaLib.Models
 {
@@ -18,8 +18,8 @@ namespace TriskaidekaphobiaLib.Models
         //public int CardNumber { get; set; }
         public string Power { get; set; }
         public string Toughness { get; set; }
-        public MTGRarity Rarity { get; set; }
-        public MTGLayout Layout { get; set; }
+        public string Rarity { get; set; }
+        public string Layout { get; set; }
         public List<string> Types { get; set; } = new List<string>();
         public List<string> Subtypes { get; set; } = new List<string>();
         public string Text { get; set; }

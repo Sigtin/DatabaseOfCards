@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MTGDAL;
 using TriskaidekaphobiaLib.Models;
-using Triskaidekaphobia.Models;
+//using Triskaidekaphobia.Models;
 
 namespace TriskaidekaphobiaLib.Services
 {
@@ -28,8 +28,8 @@ namespace TriskaidekaphobiaLib.Services
                     Flavor = card.flavor_text,
                     Power = card.power,
                     Toughness = card.toughness,
-                    Rarity = (MTGRarity)Enum.Parse(typeof(MTGRarity), card.card_rarity),
-                    Layout = (MTGLayout)Enum.Parse(typeof(MTGLayout), card.card_layout),
+                    Rarity = card.card_rarity,
+                    Layout = card.card_layout,
                     Types = card.card_type.Split(' ').ToList(),
                     Subtypes = card.card_subtype.Split(' ').ToList(),
                     Text = card.card_text,
