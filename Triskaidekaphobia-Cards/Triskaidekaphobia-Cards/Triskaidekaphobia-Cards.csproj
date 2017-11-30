@@ -171,7 +171,6 @@
     <Content Include="Images\FirstMTGImage.jpg" />
     <Content Include="Images\FirstPokemonImage.jpg" />
     <Content Include="Images\FirstYugiohImage.jpg" />
-    <Content Include="Images\TCGBrowserBanner.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config" />
