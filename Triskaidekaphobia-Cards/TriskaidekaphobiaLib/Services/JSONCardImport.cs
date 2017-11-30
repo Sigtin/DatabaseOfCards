@@ -20,7 +20,7 @@ namespace TriskaidekaphobiaLib.Services
                 string json = r.ReadToEnd();
                 sets = JsonConvert.DeserializeObject<List<MTGSet>>(json);
             }
-            using (var db = new TCGEntities1())
+            using (var db = new TCGEntities2())
             {
                 foreach (MTGSet set in sets)
                 {
