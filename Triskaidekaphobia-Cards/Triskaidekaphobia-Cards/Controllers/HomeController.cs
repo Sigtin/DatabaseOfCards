@@ -5,12 +5,13 @@ using System.Web;
 using System.Web.Mvc;
 using Triskaidekaphobia_Cards.Models;
 using Triskaidekaphobia_Cards.Services;
-
+using TriskaidekaphobiaLib;
 namespace Triskaidekaphobia_Cards.Controllers
 {
     public class HomeController : Controller
     {
         MTGCardService mtgService = new MTGCardService();
+
         public ActionResult Index()
         {
             return View();
