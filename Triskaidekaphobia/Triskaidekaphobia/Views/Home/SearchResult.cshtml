@@ -14,31 +14,9 @@
 
     foreach (var card in Model.Cards)
     {
-        if (i < 1000)
+        if (i < 100)
         {
-            <hr>
-            <table>
-                <tr>
-                    <td>
-                        <img src=@card.Image />
-                    </td>
-                    <td>
-                        <p>
-
-                            Card Name: @card.Name<br />
-                            Mana Cost: @card.ManaCost<br />
-
-                            Type: @card.Types<br />
-                            Subtype: @card.Subtypes<br />
-                            Card Text: @card.Text<br />
-                            Rarity: @card.Rarity<br />
-                            Power/Toughness: @card.Power / @card.Toughness<br />
-                        </p>
-                    </td>
-                </tr>
-            </table>
-
-            <hr>
+           @Html.Partial("_MTGCardView", card);
         }
         else
         {
