@@ -331,7 +331,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Triskaidekaphobia-Cards\MTGDAL\MTGDAL.csproj">
