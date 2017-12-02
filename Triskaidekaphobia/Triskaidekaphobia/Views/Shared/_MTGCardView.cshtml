@@ -10,22 +10,36 @@
         </td>
         <td>
             <p>
-
-                Card Name: @Model.Name<br />
-                Mana Cost: @Model.ManaCost<br />
-
-                Type: @Model.Types<br />
-                Subtype: @Model.Subtypes<br />
-                Card Text: @Model.Text<br />
-                Rarity: @Model.Rarity<br />
-                @if (Model.Toughness != null || Model.Power != null)
+                <b>Card Name:</b> @Model.Name<br />
+                <b>Mana Cost:</b>@Model.ManaCost<br />
+                <b>Type:</b>
+                @foreach (string type in Model.Types)
                 {
-                <p>Power/Toughness: @Model.Power / @Model.Toughness</p>
+                    <span>@type</span>
                 }
                 <br />
-                </p>
-            </td>
-        </tr>
-    </table>
+                @if (Model.Subtypes.ElementAt(0) != "")
+                {
+                    <b>Subtype:</b>
+                    foreach (string type in Model.Subtypes)
+                    {
+                        <span>@type</span>
+                    }
+                    <br />
+                }
+                @if (Model.Text != null)
+                {
+                    <b>Card Text:</b> @Model.Text<br />
+                }
+                <b>Rarity:</b>@Model.Rarity<br />
+                @if (Model.Toughness != null || Model.Power != null)
+                {
+                    <b>Power/Toughness</b> @Model.Power <span>/</span> @Model.Toughness
+                }
+                <br />
+            </p>
+        </td>
+    </tr>
+</table>
 
-    <hr>
+<hr>

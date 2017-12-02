@@ -8,84 +8,73 @@
 
 <p>@ViewBag.Message</p>
 
-<form>
-    <div>
+@using (Html.BeginForm("SearchResult", "Home"))
+{
+    <div class="input-field">
         <label>Card Name - </label>
-        <input type="text" />
+        @Html.TextBox("Name")
     </div>
-    <div>
+    <div class="input-field">
         <label>Set Code - </label>
-        <input type="text" />
+        @Html.TextBox("SetCode")
     </div>
-    <div>
+    <div class="input-field">
         <label>Converted Mana Cost - </label>
-        <input type="number" />
+        @Html.TextBox("CMC", "", new { @type = "number" }) 
     </div>
-    <div>
+    <div class="input-field">
         <label>MCI Number - </label>
-        <input type="number" />
+        @Html.TextBox("MCINumber", "", new { @type = "number" })
     </div>
-    <div>
+    <div class="input-field">
         <label>Mana Cost - </label>
-        <input type="text" />
+        @Html.TextBox("ManaCost")
     </div> 
-    <div>
-        <label>Card ID - </label>
-        <input type="text" />
-    </div>
-    <div>
+    <div class="input-field">
         <label>Flavor Text - </label>
-        <input type="text" />
+        @Html.TextBox("FlavorText")
     </div>
-    <div>
-        <label>Number - </label>
-        <input type="number" />
-    </div>
-    <div>
+    <div class="input-field">
         <label>Power - </label>
-        <input type="text" />
+        @Html.TextBox("Power")
     </div>
-    <div>
+    <div class="input-field">
         <label>Toughness - </label>
-        <input type="text" />
+        @Html.TextBox("Toughness")
     </div>
     <div class="input-field">
         <label>Rarity - </label>
-        @Html.EnumDropDownListFor(x => x.Card_Rarity)
+        @Html.TextBox("Rarity")
     </div>
     <div class="input-field">
         <label>Card Layout - </label>
-        @Html.EnumDropDownListFor(x => x.Card_Layout)
+        @Html.TextBox("Layout")
     </div>
-    <div>
+    <div class="input-field">
         <label>Card Type - </label>
-        <input type="text" />
+        @Html.TextBox("Type")
     </div>
-    <div>
+    <div class="input-field">
         <label>Card Subtype - </label>
-        <input type="text" />
+        @Html.TextBox("Subtype")
     </div>
-    <div>
+    <div class="input-field">
         <label>Card Text - </label>
-        <input type="text" />
+        @Html.TextBox("Text")
     </div>
-    <div>
-        <label>Multiverse ID - </label>
-        <input type="number" />
-    </div>
-    <div>
+    <div class="input-field">
         <label>Card Colors - </label>
-        <input type="text" />
+        @Html.TextBox("Color")
     </div>
-    <div>
+    <div class="input-field">
         <label>Card Color Identity</label>
-        <input type="text" />
+        @Html.TextBox("ColorIdentity")
     </div>
-    <div>
+    <div class="input-field">
         <label>Card Artist</label>
-        <input type="text" />
+        @Html.TextBox("Artist")
     </div>
     <div>
         <input type="submit" />
     </div>
-</form>
+}
