@@ -9,19 +9,26 @@
 <p>"@Model.Cards.Count()" Results Found</p>
 
 @{
-    int i = 0;
-
-
-    foreach (var card in Model.Cards)
+    if (Model.Cards.Count() >= 1)
     {
-        if (i < 100)
+        int i = 0;
+
+
+        foreach (var card in Model.Cards)
         {
+            if (i < 100)
+            {
            @Html.Partial("_MTGCardView", card);
+            }
+            else
+            {
+                break;
+            }
+            i++;
         }
-        else
-        {
-            break;
-        }
-        i++;
+    }
+    else
+    {
+        <p>No cards matched your search.</p>
     }
 }

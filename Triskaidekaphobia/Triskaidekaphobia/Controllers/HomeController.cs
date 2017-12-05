@@ -44,8 +44,7 @@ namespace Triskaidekaphobia.Controllers
         {
             if (ModelState.IsValid)
             {
-                TriskaidekaphobiaLib.Models.MTGCardList MTGlist = new TriskaidekaphobiaLib.Models.MTGCardList();
-                //MTGlist = service.ReturnCardList();
+                TriskaidekaphobiaLib.Models.MTGCardList MTGlist = mtgService.GetAllMagicCards();
                 return RedirectToAction("SearchResult", MTGlist);
             }
             else
@@ -56,7 +55,6 @@ namespace Triskaidekaphobia.Controllers
 
         public ActionResult SearchResult(TriskaidekaphobiaLib.Models.MTGCardList MTGlist)
         {
-            MTGlist = mtgService.GetAllMagicCards();
             return View(MTGlist);
         }
     }
