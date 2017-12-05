@@ -1,6 +1,7 @@
 ﻿body {
     font-family: 'magic-font';
-    color:black;
+    color: black;
+    padding-left: 200px;
 }
 
 .nav-wrapper {
