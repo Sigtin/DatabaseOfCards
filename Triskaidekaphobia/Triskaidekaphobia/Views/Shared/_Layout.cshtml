@@ -18,18 +18,13 @@
     <ul class="side-nav fixed">
         <li><img class="logoImageNav" src="~/Images/TCGBrowserBanner.png" /></li>
         <li>
-            <div class="search">
-                @using (Html.BeginForm("Index", "Search", FormMethod.Get))
-                {
-                    <ul class="nav navbar-nav">
-                        <li>@Html.TextBox("id", ViewBag.CurrentFilter as string)</li>
-                        <li><input class="search-button" type="submit" value="Search" /></li>
-                    </ul>
-                }
+            <div class="input-field col s6">
+                <i class="material-icons prefix">search</i>
+                <input id="icon_prefix" type="text" class="validate" placeholder="search">
             </div>
         </li>
         <li>@Html.ActionLink("Home", "Index", "Home")</li>
-        <li><a href="#!">Second Sidebar Link</a></li>
+        <li>@Html.ActionLink("Search Results", "SearchResult", "Home")</li>
     </ul>
 
     <div class="container">
