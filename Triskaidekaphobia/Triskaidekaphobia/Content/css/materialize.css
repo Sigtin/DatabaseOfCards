@@ -2158,10 +2158,10 @@ html {
 /**
  * Remove default margin.
  */
-body {
+/*body {
   margin: 0;
   padding-left: 200px;
-}
+}*/
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -2768,7 +2768,7 @@ video.responsive-video {
 }
 
 .parallax-container .parallax {
- position:static;
+ position:absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -2778,7 +2778,7 @@ video.responsive-video {
 
 .parallax-container .parallax img {
   display: none;
-  position:static;
+  position:absolute;
   left: 50%;
   bottom: 0;
   min-width: 100%;
