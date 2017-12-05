@@ -57,5 +57,11 @@ namespace Triskaidekaphobia.Controllers
         {
             return View(MTGlist);
         }
+
+        [HttpPost]
+        public ActionResult SearchResult(string Name = "", string SetCode = "", string LessGreaterEqual = null, int? CMC = null, int? MCINumber = null, string FlavorText = null, string Power = null, string Toughness = null, string Rarity = null, string Layout = null, string Type = null, string Subtype = null, string Text = null, string Color = null, string ColorIdentity = null, string Artist = null)
+        {
+            return View();
+        }
     }
 }

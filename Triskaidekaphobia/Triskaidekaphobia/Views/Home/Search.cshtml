@@ -20,16 +20,22 @@
     </div>
     <div class="input-field">
         <label>Converted Mana Cost - </label>
-        @Html.TextBox("CMC", "", new { @type = "number" }) 
+        <div>
+            @Html.RadioButton("LessGreaterEqual", "<", true)
+            @Html.Label("<")
+            <br />
+            @Html.RadioButton("LessGreaterEqual", ">")
+            @Html.Label(">")
+            <br />
+            @Html.RadioButton("LessGreaterEqual", "=")
+            @Html.Label("=")
+        </div>
+        @Html.TextBox("CMC", "", new { @type = "number" })
     </div>
     <div class="input-field">
         <label>MCI Number - </label>
         @Html.TextBox("MCINumber", "", new { @type = "number" })
     </div>
-    <div class="input-field">
-        <label>Mana Cost - </label>
-        @Html.TextBox("ManaCost")
-    </div> 
     <div class="input-field">
         <label>Flavor Text - </label>
         @Html.TextBox("FlavorText")
@@ -52,10 +58,12 @@
     </div>
     <div class="input-field">
         <label>Card Type - </label>
+        <label>Comma seperated list e.g. Artifact, Creature</label>
         @Html.TextBox("Type")
     </div>
     <div class="input-field">
         <label>Card Subtype - </label>
+        <label>Comma seperated list e.g. Dinosuar, Fungus</label>
         @Html.TextBox("Subtype")
     </div>
     <div class="input-field">
@@ -64,10 +72,12 @@
     </div>
     <div class="input-field">
         <label>Card Colors - </label>
+        <label>Comma seperated list e.g. White, Black</label>
         @Html.TextBox("Color")
     </div>
     <div class="input-field">
         <label>Card Color Identity</label>
+        <label>Comma seperated list e.g. White, Black</label>
         @Html.TextBox("ColorIdentity")
     </div>
     <div class="input-field">
