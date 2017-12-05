@@ -13,7 +13,7 @@ namespace TriskaidekaphobiaLib.Services
         public MTGCardList GetAllMagicCards()
         {
             MTGCardList model = new MTGCardList();
-            using (var db = new TCGEntities3())
+            using (var db = new TCGEntities())
             {
                 var query = db.MTG_Card.Select(x => x);
                 var cardList = query.ToList();
