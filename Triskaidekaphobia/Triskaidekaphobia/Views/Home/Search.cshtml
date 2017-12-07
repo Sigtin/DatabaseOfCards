@@ -21,7 +21,7 @@
     <div>
         <label>Converted Mana Cost - </label>
         <div>
-            @Html.RadioButton("LessGreaterEqual", "<", false, new { id = "LessThan" })
+            @Html.RadioButton("LessGreaterEqual", "<", true, new { id = "LessThan" })
             <label for="LessThan"><</label>
             <br />
             @Html.RadioButton("LessGreaterEqual", ">", false, new { id = "GreaterThan" })
@@ -54,12 +54,12 @@
     </div>
     <div class="input-field">
         <label>Card Type - </label>
-        <label>Comma seperated list e.g. Artifact, Creature</label>
+        <label>Up to one e.g. Creature</label>
         @Html.TextBox("Type")
     </div>
     <div class="input-field">
         <label>Card Subtype - </label>
-        <label>Comma seperated list e.g. Dinosuar, Fungus</label>
+        <label>Up to one e.g. Zombie</label>
         @Html.TextBox("Subtype")
     </div>
     <div class="input-field">
@@ -68,12 +68,12 @@
     </div>
     <div class="input-field">
         <label>Card Colors - </label>
-        <label>Comma seperated list e.g. White, Black</label>
+        <label>Space seperated list WUBRG order e.g. White Blue Black Red Green</label>
         @Html.TextBox("Color")
     </div>
     <div class="input-field">
         <label>Card Color Identity</label>
-        <label>Comma seperated list e.g. White, Black</label>
+        <label>Comma seperated list WUBRG order e.g. W U B R G</label>
         @Html.TextBox("ColorIdentity")
     </div>
     <div class="input-field">
