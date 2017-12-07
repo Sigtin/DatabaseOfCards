@@ -10,9 +10,9 @@
         </td>
         <td>
             <p>
-                <b>Card Name:</b> @Model.Name<br />
-                <b>Mana Cost:</b>@Model.ManaCost<br />
-                <b>Type:</b>
+                <b>Card Name: </b> @Model.Name<br />
+                <b>Mana Cost: </b>@Model.ManaCost<br />
+                <b>Type: </b>
                 @foreach (string type in Model.Types)
                 {
                     <span>@type</span>
@@ -20,7 +20,7 @@
                 <br />
                 @if (Model.Subtypes.ElementAt(0) != "")
                 {
-                    <b>Subtype:</b>
+                    <b>Subtype: </b>
                     foreach (string type in Model.Subtypes)
                     {
                         <span>@type</span>
@@ -29,13 +29,18 @@
                 }
                 @if (Model.Text != null)
                 {
-                    <b>Card Text:</b> @Model.Text<br />
+                    <b>Card Text: </b> @Model.Text<br />
+                }
+                @if (Model.Flavor != null)
+                {
+                    <b>Flavor Text: </b> @Model.Flavor<br />
                 }
                 <b>Rarity:</b>@Model.Rarity<br />
                 @if (Model.Toughness != null || Model.Power != null)
                 {
-                    <b>Power/Toughness</b> @Model.Power <span>/</span> @Model.Toughness
+                    <b>Power/Toughness: </b> @Model.Power <span>/</span> @Model.Toughness<br/>
                 }
+                <b>Artist: </b>@Model.Artist
                 <br />
             </p>
         </td>

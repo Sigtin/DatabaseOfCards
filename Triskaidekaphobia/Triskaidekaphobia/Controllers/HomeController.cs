@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using Triskaidekaphobia.Models;
 using TriskaidekaphobiaLib.Services;
 using TriskaidekaphobiaLib.Models;
+using PagedList;
 
 namespace Triskaidekaphobia.Controllers
 {
@@ -73,9 +74,11 @@ namespace Triskaidekaphobia.Controllers
         }
 
         [HttpPost]
-        public ActionResult SearchResult(string Name = "", string SetCode = "", string LessGreaterEqual = null, int? CMC = null, int? MCINumber = null, string FlavorText = null, string Power = null, string Toughness = null, string Rarity = null, string Layout = null, string Type = null, string Subtype = null, string Text = null, string Color = null, string ColorIdentity = null, string Artist = null)
+        public ActionResult SearchResult(string Name = "", string SetCode = "", string LessGreaterEqual = null, int? CMC = null, string FlavorText = null, string Power = null, string Toughness = null, string Rarity = "", string Layout = "", string Type = "", string Subtype = "", string Text = null, string Color = "", string ColorIdentity = "", string Artist = "")
         {
-            return View();
+            TriskaidekaphobiaLib.Models.MTGCardList cardList = new TriskaidekaphobiaLib.Models.MTGCardList();
+            cardList = mtgService.AdvancedSearch(Name, SetCode, LessGreaterEqual, CMC, FlavorText, Power, Toughness, Rarity, Layout, Type, Subtype, Text, Color, ColorIdentity, Artist);
+            return View(cardList);
         }
     }
 }
