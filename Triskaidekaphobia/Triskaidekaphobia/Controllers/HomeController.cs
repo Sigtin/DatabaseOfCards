@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using Triskaidekaphobia.Models;
 using TriskaidekaphobiaLib.Services;
 using TriskaidekaphobiaLib.Models;
+using PagedList;
 
 namespace Triskaidekaphobia.Controllers
 {
