@@ -18,23 +18,19 @@
         <label>Set Code - </label>
         @Html.TextBox("SetCode")
     </div>
-    <div class="input-field">
+    <div>
         <label>Converted Mana Cost - </label>
         <div>
-            @Html.RadioButton("LessGreaterEqual", "<", true)
-            @Html.Label("<")
+            @Html.RadioButton("LessGreaterEqual", "<", false, new { id = "LessThan" })
+            <label for="LessThan"><</label>
             <br />
-            @Html.RadioButton("LessGreaterEqual", ">")
-            @Html.Label(">")
+            @Html.RadioButton("LessGreaterEqual", ">", false, new { id = "GreaterThan" })
+            <label for="GreaterThan">></label>
             <br />
-            @Html.RadioButton("LessGreaterEqual", "=")
-            @Html.Label("=")
+            @Html.RadioButton("LessGreaterEqual", "=", false, new { id = "EqualTo" })
+            <label for="EqualTo">=</label>
         </div>
         @Html.TextBox("CMC", "", new { @type = "number" })
-    </div>
-    <div class="input-field">
-        <label>MCI Number - </label>
-        @Html.TextBox("MCINumber", "", new { @type = "number" })
     </div>
     <div class="input-field">
         <label>Flavor Text - </label>
