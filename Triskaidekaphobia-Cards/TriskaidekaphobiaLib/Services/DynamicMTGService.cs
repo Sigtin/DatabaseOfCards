@@ -488,7 +488,7 @@ namespace TriskaidekaphobiaLib.Services
                         }
                     }
                 }
-                var cardList = query.ToList();
+                var cardList = query.OrderBy(x => x.card_name).ToList();
                 cardList.ForEach(card => model.Cards.Add(new MTGCard()
                 {
                     Name = card.card_name,
