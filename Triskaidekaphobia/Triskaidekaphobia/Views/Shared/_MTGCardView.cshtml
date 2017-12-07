@@ -11,7 +11,10 @@
         <td>
             <p>
                 <b>Card Name: </b> @Model.Name<br />
-                <b>Mana Cost: </b>@Model.ManaCost<br />
+                @if (!Model.Types.Contains("Land"))
+                {
+                    <b>Mana Cost: </b>@Model.ManaCost<br />
+                }
                 <b>Type: </b>
                 @foreach (string type in Model.Types)
                 {

@@ -19,8 +19,13 @@
         <li><img class="logoImageNav" src="~/Images/TCGBrowserBanner.png" /></li>
         <li>
             <div class="input-field col s6">
-                <i class="material-icons prefix">search</i>
-                <input id="icon_prefix" type="text" class="validate" placeholder="search">
+                
+@using (Html.BeginForm("BasicSearchResult", "Home"))
+{
+    <i class="material-icons prefix">search</i>
+                @Html.TextBox("q")
+                <input type="submit" value="Search" />
+}
             </div>
         </li>
         <li>@Html.ActionLink("Home", "Index", "Home")</li>
@@ -36,9 +41,9 @@
         <div class="section no-pad-bot">
             <div class="container">
                 <br><br>
-                <h1 class="header center black-text text-lighten-2">Magic: The Gathering</h1>
+                <h1 class="header center black-text text-lighten-2 whiteOutline">Magic: The Gathering</h1>
                 <div class="row center">
-                    <h5 class="header col s12 light">A pretty fun card game! Modern Masters out now!</h5>
+                    <h5 class="header col s12 light blackOutline">A pretty fun card game! Iconic Masters out now!</h5>
                 </div>
                 <div class="row center">
                     <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
@@ -47,7 +52,7 @@
 
             </div>
         </div>
-        <div class="parallax"><img src="/Images/FirstMTGImage.jpg" alt="Unsplashed background img 1"></div>
+        <div class="parallax"><img src="/Images/Iconic-Masters.jpg" alt="Unsplashed background img 1"></div>
     </div>
 
 
@@ -90,9 +95,9 @@
     <div class="parallax-container valign-wrapper">
         <div class="section no-pad-bot">
             <div class="container">
-                <h1 class="header center black-text text-lighten-2">Pokemon</h1>
+                <h1 class="header center black-text text-lighten-2 whiteOutline">Pokemon</h1>
                 <div class="row center">
-                    <h5 class="header col s12 light">A better video game, a decent card game!</h5>
+                    <h5 class="header col s12 light blackOutline">A better video game, a decent card game!</h5>
                 </div>
             </div>
         </div>
@@ -117,9 +122,9 @@
     <div class="parallax-container valign-wrapper">
         <div class="section no-pad-bot">
             <div class="container">
-                <h1 class="header center black-text text-lighten-2">Yu-gi-oh</h1>
+                <h1 class="header center black-text text-lighten-2 whiteOutline">Yu-gi-oh</h1>
                 <div class="row center">
-                    <h5 class="header col s12 light">Do people still play this???</h5>
+                    <h5 class="header col s12 light blackOutline">Do people still play this???</h5>
                 </div>
             </div>
         </div>

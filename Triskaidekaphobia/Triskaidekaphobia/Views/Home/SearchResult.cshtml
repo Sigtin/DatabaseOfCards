@@ -16,7 +16,7 @@
 
         foreach (var card in Model.Cards)
         {
-            if (i < 100)
+            if (i < Model.Cards.Count)
             {
            @Html.Partial("_MTGCardView", card);
             }
