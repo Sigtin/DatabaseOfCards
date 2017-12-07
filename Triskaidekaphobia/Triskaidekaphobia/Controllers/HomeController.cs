@@ -52,9 +52,23 @@ namespace Triskaidekaphobia.Controllers
                 return View();
             }
         }
-
-        public ActionResult SearchResult(TriskaidekaphobiaLib.Models.MTGCardList MTGlist)
+        [HttpPost]
+        public ActionResult BasicSearchResult(string q)
         {
+            return RedirectToAction("SearchResult", "Home", new { q = q });
+        }
+        public ActionResult SearchResult(string q)
+        {
+            TriskaidekaphobiaLib.Models.MTGCardList MTGlist = new TriskaidekaphobiaLib.Models.MTGCardList();
+            if (!String.IsNullOrEmpty(q))
+            {
+                MTGlist = mtgService.GetAllMagicCardsByTerm(q);
+            }
+            else
+            {
+                MTGlist = mtgService.GetAllMagicCards();
+            }
+
             return View(MTGlist);
         }
 
