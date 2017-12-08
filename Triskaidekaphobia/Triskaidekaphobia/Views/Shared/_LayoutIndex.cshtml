@@ -31,10 +31,13 @@
         <li>@Html.ActionLink("Home", "Index", "Home")</li>
         <li>@Html.ActionLink("Advanced Search", "Search", "Home")</li>
         <li>@Html.ActionLink("Search Results", "SearchResult", "Home")</li>
+    @Html.Partial("_LoginPartial")
     </ul>
 
     <div class="container">
         @RenderBody()
+        @RenderSection("scripts", required: false)
+
         </div>
 
     <div id="index-banner" class="parallax-container">
@@ -64,9 +67,9 @@
                 <div class="col s12 m4">
                     <div class="icon-block">
                         <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-                        <h5 class="center">Speeds up development</h5>
+                        <h5 class="center">Search For Your Cards</h5>
 
-                        <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+                        <p class="light">We created a search form just for users like you; wanting to look up cards for building there deck.</p>
                     </div>
                 </div>
 
@@ -75,7 +78,7 @@
                         <h2 class="center brown-text"><i class="material-icons">group</i></h2>
                         <h5 class="center">User Experience Focused</h5>
 
-                        <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+                        <p class="light">By utilizing elements and principles of Material Design, we were able to utilize a framework that incorporates components and animations that provide more feedback to you. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
                     </div>
                 </div>
 
@@ -84,7 +87,7 @@
                         <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
                         <h5 class="center">Easy to work with</h5>
 
-                        <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+                        <p class="light">All you have to do is type in the search bar which card you're looking for or you can use our Advanced search to find even more specific cards to your liking.</p>
                     </div>
                 </div>
             </div>
@@ -111,7 +114,7 @@
                 <div class="col s12 center">
                     <h3><i class="mdi-content-send brown-text"></i></h3>
                     <h4>Contact Us</h4>
-                    <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                    <p class="left-align light">If would like toreach us for further assistance or even to give feedback and reccomendations; we would appreciate that very much! You can reach us at TCGBrowser@gmail.com</p>
                 </div>
             </div>
 
@@ -167,10 +170,7 @@
                     <li class="disabled"><a href=""><i class="material-icons">chevron_left</i></a></li>
                     <li class="active"><a href="#">1</a></li>
                     <li class="waves-effect">2</li>
-                    <li class="waves-effect">3</li>
-                    <li class="waves-effect">4</li>
-                    <li class="waves-effect">5</li>
-                    <li class="waves-effect">6</li>
+               
                     <li class="waves-effect"><a href=""><i class="material-icons">chevron_right</i></a></li>
                 </ul>
             </div>
